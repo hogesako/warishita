@@ -107,7 +107,10 @@ ul,ol{
 
  #content.container {
     background: #fff;
-    min-height:500px;
+}
+
+#content.container>.row, #content.container #dashboard {
+    padding: 20px 10px 40px;
 }
 
 #footer{
@@ -128,6 +131,7 @@ ul,ol{
 .iframe{
     position:relative;
     width:100%;
+    margin-bottom: 10px;
 }
 
 .iframe iframe{
@@ -137,3 +141,5 @@ ul,ol{
     width:100%;
     height:100%;
 }
+
+
