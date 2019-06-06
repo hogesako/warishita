@@ -89,7 +89,7 @@ ul,ol{
                 border-left: 1px #b0aca3 solid;
                 i{
                     display: block;
-                    color: #aaa;                
+                    color: #777;                
                 }
                 .navbar-text{
                     color: #e89aba;
@@ -107,6 +107,7 @@ ul,ol{
 
  #content.container {
     background: #fff;
+    min-height:500px;
 }
 
 #content.container>.row, #content.container #dashboard {
@@ -142,4 +143,7 @@ ul,ol{
     height:100%;
 }
 
-
+.corner-title{
+    border-bottom: 3px solid #8ccbea;
+    color: #8ccbea;
+}
