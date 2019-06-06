@@ -34,25 +34,53 @@
         </div>
       </div>
 	  </div>
-    <div class="container">
-      <nav>
-        <a href="index.html">NEWS</a>
-        <a href="index.html">WHAT'S NEW</a>
-        <a href="index.html">PROFILE</a>
-        <a href="index.html">DISCOGRATPY</a>
-        <a href="index.html">GOODS</a>
-      </nav>
+    <div class="navbar navbar-default hidden-sm">
+      <div class="container">
+        <ul class="nav navbar-nav list-inline">
+					<li>
+            <a href="index.html">
+              <i class="fas fa-bullhorn fa-2x"></i>
+              <div class="navbar-text">NEWS</div>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <i class="fas fa-newspaper fa-2x"></i>
+              <div class="navbar-text">WHAT'S NEW</div>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <i class="fas fa-id-card fa-2x"></i>
+              <div class="navbar-text">PROFILE</div>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <i class="fas fa-music fa-2x"></i>
+              <div class="navbar-text">DISCOGRATPY</div>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <i class="fas fa-gift fa-2x"></i>
+              <div class="navbar-text">GOODS</div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div id="content" class="container">
       <%= yield %>
     </div>
 
-    <div class="container">
-      <footer>
-        <nav>
-        </nav>
-        <p>© 2019 WARISHITA Powered by hogesako</p>
-      </footer>
-    </div>
+    <footer>
+      <div id="footer">
+        <div class="container footer-text">
+            <div>背景やロゴはすべて自作です</div>
+            <div>© 2019 WARISHITA Powered by hogesako</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
