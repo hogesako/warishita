@@ -3,6 +3,9 @@
         <div class="corner-title">
             <h2>NEWS</h2>
         </div>
+        <% @contents.each do |news| %>
+            <p><%= news.title %></p>
+        <% end %>
     </div>
     <%= render partial: "shared/sidemenu" %>
 </div>
