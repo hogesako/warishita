@@ -3,9 +3,19 @@
         <div class="corner-title">
             <h2>NEWS</h2>
         </div>
-        <% @contents.each do |news| %>
-            <p><%= news.title %></p>
-        <% end %>
+        <div class="tag-list"></div>
+        <div class="content-list col-sm-12">
+            <ul class="list-unstyled">
+                <% @contents.each do |news| %>
+                    <li>
+                        <a href="/contents/<%= news.id %>">
+                            <div class="title"><%= news.title %></div>
+                            <div class="meta"><span>UPDATE: <%= news.updated_at.strftime('%Y.%m.%d') %></span></div>
+                        </a>
+                    </li>
+                <% end %>
+            </ul>
+        </div>
     </div>
     <%= render partial: "shared/sidemenu" %>
 </div>
