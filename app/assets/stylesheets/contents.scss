@@ -8,6 +8,7 @@
 }
 
 .title {
+    color: #666;
     display: inline;
     line-height: 22px;
     font-weight: bold;
@@ -20,5 +21,8 @@
     ul li {
         padding: 5px 0;
         border-bottom: 2px dotted #aaa;
+        a{
+            text-decoration: none;
+        }
     }
 }
