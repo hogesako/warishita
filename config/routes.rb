@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   get 'movies/show'
   get 'photos/show'
   get 'products', to: 'goods#show'
