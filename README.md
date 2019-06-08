@@ -1,24 +1,21 @@
-# README
+# できていないこと(やらないこと含む)
+## ユーザ関連
+* ユーザ登録
+* ログイン
+* 課金
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# ページテンプレ
+* SUPPORTERS MENU
+* footer類
 
-Things you may want to cover:
+#トップページ
+* メイン画像
+* カルーセル
+* NEWS
+* WHATS NEW
+* SUPPORTERS MENU
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## その他
+* マルチテナント
+* 管理画面系全般
