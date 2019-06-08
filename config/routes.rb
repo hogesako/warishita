@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get 'contents/ticket/page/:page', to: 'contents#ticket'
   get 'contents/:id', to: 'contents#show'
   root 'top#show'
+  get '*path', controller: 'application', action: 'render_404'
 end
