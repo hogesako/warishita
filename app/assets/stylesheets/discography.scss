@@ -1,3 +1,10 @@
 // Place all the styles related to the discography controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#portfolio .content-list>li {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px dotted #ccc;
+}
