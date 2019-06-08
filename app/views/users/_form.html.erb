@@ -17,18 +17,17 @@
   </div>
 
   <div class="field">
-    <%= form.label :crypted_password %>
-    <%= form.text_field :crypted_password %>
+    <%= form.label :password %><br />
+    <%= form.password_field :password %>
+  </div>
+  <div class="field">
+    <%= form.label :password_confirmation %><br />
+    <%= form.password_field :password_confirmation %>
   </div>
 
   <div class="field">
-    <%= form.label :salt %>
-    <%= form.text_field :salt %>
-  </div>
-
-  <div class="field">
-    <%= form.label :payment_status %>
-    <%= form.check_box :payment_status %>
+    <%= form.label :payed %>
+    <%= form.check_box :payed %>
   </div>
 
   <div class="actions">

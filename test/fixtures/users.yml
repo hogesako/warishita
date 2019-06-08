@@ -4,10 +4,10 @@ one:
   email: MyString
   crypted_password: MyString
   salt: MyString
-  payment_status: false
+  payed: false
 
 two:
   email: MyString
   crypted_password: MyString
   salt: MyString
-  payment_status: false
+  payed: false

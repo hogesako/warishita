@@ -16,7 +16,7 @@ class UsersTest < ApplicationSystemTestCase
 
     fill_in "Crypted password", with: @user.crypted_password
     fill_in "Email", with: @user.email
-    check "Payment status" if @user.payment_status
+    check "Payed" if @user.payed
     fill_in "Salt", with: @user.salt
     click_on "Create User"
 
@@ -30,7 +30,7 @@ class UsersTest < ApplicationSystemTestCase
 
     fill_in "Crypted password", with: @user.crypted_password
     fill_in "Email", with: @user.email
-    check "Payment status" if @user.payment_status
+    check "Payed" if @user.payed
     fill_in "Salt", with: @user.salt
     click_on "Update User"
 
