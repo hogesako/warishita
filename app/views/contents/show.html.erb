@@ -1,11 +1,22 @@
 <div id="content" class="row">
     <div id="main-content" class="col-md-8 col-lg-9">
         <div class="corner-title">
-            <h2><%= @content.category.name %></h2>   
+            <h2>
+                <% if !@content.category.nil?%>
+                    <span><%= @content.category.name %></span>
+                <% else %>
+                    <span>NEWS</span>
+                <% end %>
+            </h2>   
         </div>
         <div class="details">
             <div class="title"><h3><%= @content.title %></h3></div>
-            <div class="meta"><span>UPDATE: <%= @content.updated_at.strftime('%Y.%m.%d') %></span></div>
+            <div class="meta">
+                <span>UPDATE: <%= @content.updated_at.strftime('%Y.%m.%d') %></span>
+                <% if !@content.category.nil?%>
+                    <span class="label label-default"><%= @content.category.name %></span>
+                <% end %>
+            </div>
             <div class="body">
                 <%= @content.body %>
             </div>

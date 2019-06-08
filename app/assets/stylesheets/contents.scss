@@ -36,6 +36,7 @@ h3, .h3 {
 .body {
     border-top: 1px solid #ccc;
     padding-top:20px;
+    margin-top:10px;
 }
 
 .pagination {
@@ -59,4 +60,23 @@ h3, .h3 {
 
 .pagination span.current {
     color: #fff;
+}
+
+.label {
+    font-size: 65%;
+}
+.label-default {
+    background-color: #999;
+}
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
 }
