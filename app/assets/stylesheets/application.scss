@@ -59,7 +59,8 @@ a {
 
  #header{
     background: image-url("bg_header.png") repeat-x;
-
+    background-size: auto 100%;
+    
      #site-logo{
         img{
             width: 100%;
