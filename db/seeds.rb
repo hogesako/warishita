@@ -26,6 +26,6 @@ categories = Category.create(
         { name: 'NICONICO生放送' }
     ])
 
-5.times do |i|
-    Content.create(title: "テストタイトル #{i}", body: "テスト記事 #{i}" ,category_id: categories[i].id )
+100.times do |i|
+    Content.create(title: "テストタイトル #{i}", body: "テスト記事 #{i}" ,category_id: categories[i % categories.length ].id )
 end

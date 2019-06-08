@@ -17,5 +17,6 @@
 
 
 ## その他
+* PROFILE,DISCOGRAPHY
 * マルチテナント
 * 管理画面系全般

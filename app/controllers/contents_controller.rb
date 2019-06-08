@@ -1,6 +1,6 @@
 class ContentsController < ApplicationController
   def news
-    @contents = Content.all
+    @contents = Content.joins(:category).page(params[:page]).order(updated_at: "DESC")
   end
   def ticket
 

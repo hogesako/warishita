@@ -10,12 +10,18 @@
                     <li>
                         <a href="/contents/<%= news.id %>">
                             <div class="title"><%= news.title %></div>
-                            <div class="meta"><span>UPDATE: <%= news.updated_at.strftime('%Y.%m.%d') %></span></div>
+                            <div class="meta">
+                                <span>UPDATE: <%= news.updated_at.strftime('%Y.%m.%d') %></span>
+                                <% if !news.category.nil?%>
+                                    <span>/ <%= news.category.name %></span>
+                                <% end %>
+                            </div>
                         </a>
                     </li>
                 <% end %>
             </ul>
         </div>
+        <%= paginate(@contents) %>
     </div>
     <%= render partial: "shared/sidemenu" %>
 </div>

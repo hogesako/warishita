@@ -37,3 +37,22 @@ h3, .h3 {
     border-top: 1px solid #ccc;
     padding-top:20px;
 }
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 18px 0;
+    border-radius: 2px;
+}
+
+.pagination span {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+}
+
+.pagination span.current {
+    color: #fff;
+}
