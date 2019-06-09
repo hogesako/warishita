@@ -2,11 +2,11 @@
 ## ユーザ関連
 * 課金関連
 
-# ページテンプレ
+## ページテンプレ
 * SUPPORTERS MENU
 * footer類
 
-# トップページ
+## トップページ
 * PICK UP MENU
 * カルーセル
 * SUPPORTERS MENU
