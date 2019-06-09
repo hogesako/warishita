@@ -20,20 +20,20 @@
 
   <body>
     <div id="header">
-			<div class="container">
+			<div class="container d-none d-md-block">
 				<ul class="auth-menu">
           <% if current_user %>
-            <li class="text-center hidden-xs">
+            <li class="text-center">
               <a href="/dashboard" class="btn-left"><i class="fas fa-home"></i>マイページ</a>
             </li>
-            <li class="text-center hidden-xs">
+            <li class="text-center">
               <a href="/signout" class="btn-right"><i class="fas fa-sign-out-alt"></i>ログアウト</a>
             </li>
           <% else %>
-            <li class="text-center hidden-xs">
+            <li class="text-center">
               <a href="/signup" class="btn-left"><i class="fas fa-user-plus"></i>新規会員登録</a>
             </li>
-            <li class="text-center hidden-xs">
+            <li class="text-center">
               <a href="/signin" class="btn-right"><i class="fas fa-lock"></i>ログイン</a>
             </li>
           <% end %>
@@ -45,6 +45,25 @@
         </div>
       </div>
 	  </div>
+    <div class="d-md-none">
+      <ul class="login row">
+        <% if current_user %>
+          <li class="text-center col-sm-6">
+            <a href="/dashboard"><i class="fas fa-home"></i>マイページ</a>
+          </li>
+          <li class="text-center col-sm-6">
+            <a href="/signout"><i class="fas fa-sign-out-alt"></i>ログアウト</a>
+          </li>
+        <% else %>
+          <li class="text-center col-sm-6">
+            <a href="/signup" class="btn-left"><i class="fas fa-user-plus"></i>新規会員登録</a>
+          </li>
+          <li class="text-center col-sm-6">
+            <a href="/signin" class="btn-right"><i class="fas fa-lock"></i>ログイン</a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
     <div class="navbar navbar-default hidden-sm">
       <div class="container">
         <ul class="nav navbar-nav list-inline">

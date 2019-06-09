@@ -58,6 +58,22 @@ a {
     }
 }
 
+.login {
+    background-color: #1d2a6f;
+    margin: 0;
+    position: static;
+    padding: 0;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    li{
+        margin-top:10px;
+        margin-bottom: 10px; 
+    }
+}
+
  #header{
     background: image-url("bg_header.png") repeat-x;
     background-size: auto 100%;
