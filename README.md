@@ -1,22 +1,17 @@
 # できていないこと(やらないこと含む)
 ## ユーザ関連
-* ユーザ登録
-* ログイン
-* 課金
+* 課金関連
 
 # ページテンプレ
 * SUPPORTERS MENU
 * footer類
 
-#トップページ
-* メイン画像
+# トップページ
+* PICK UP MENU
 * カルーセル
-* NEWS
-* WHATS NEW
 * SUPPORTERS MENU
 
 
 ## その他
-* PROFILE,DISCOGRAPHY
 * マルチテナント
 * 管理画面系全般
