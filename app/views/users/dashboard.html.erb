@@ -1,6 +1,11 @@
 <div id="content" class="row">
     <div id="main-content" class="col-md-12">
-        <%= current_user.email %>
-        <%= current_user.payed ? '有料会員': '無料会員' %>
+        <div class="corner-title">
+            <h2>MYPAGE</h2>
+        </div>
+        <div class="info">
+            <p><strong>email：</strong><%= current_user.email %></p>
+            <p><strong>課金状況：</strong><%= current_user.payed ? '有料会員': '無料会員' %></p>
+        </div>
     </div>
 </div>
