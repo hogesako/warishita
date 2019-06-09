@@ -10,4 +10,10 @@ class ApplicationController < ActionController::Base
   def render_500
     render template: 'errors/error_500', status: 500, layout: 'application', content_type: 'text/html'
   end
+
+  protected
+
+  def not_authenticated
+    redirect_to signin_path
+  end
 end
