@@ -37,14 +37,14 @@
             </div>
             <div class="content-list col-sm-8">
                 <ul class="list-unstyled">
-                    <% @contents.each do |news| %>
+                    <% @pages.each do |page| %>
                         <li>
-                            <a href="/contents/<%= news.id %>">
-                                <div class="title"><%= news.title %></div>
+                            <a href="/photos/<%= page.id %>">
+                                <div class="title"><%= page.title %></div>
                                 <div class="meta">
-                                    <span>UPDATE: <%= news.updated_at.strftime('%Y.%m.%d') %></span>
-                                    <% if !news.category.nil?%>
-                                        <span>/ <%= news.category.name %></span>
+                                    <span>UPDATE: <%= page.updated_at.strftime('%Y.%m.%d') %></span>
+                                    <% if !page.img_size.nil?%>
+                                        <span>/ <%= page.img_size.name %></span>
                                     <% end %>
                                 </div>
                             </a>
