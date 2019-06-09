@@ -3,6 +3,24 @@
         <div class="corner-title">
             <h2>WHAT'S NEW</h2>
         </div>
+        <div class="content-list col-sm-12">
+            <ul class="list-unstyled">
+                <% @pages.each do |page| %>
+                    <li>
+                        <a href="/photos/<%= page.id %>">
+                            <div class="title"><%= page.title %></div>
+                            <div class="meta">
+                                <span>UPDATE: <%= page.updated_at.strftime('%Y.%m.%d') %></span>
+                                <% if !page.img_size.nil?%>
+                                    <span>/ <%= page.img_size.name %></span>
+                                <% end %>
+                            </div>
+                        </a>
+                    </li>
+                <% end %>
+            </ul>
+        </div>
+        <%= paginate(@pages) %>
     </div>
     <%= render partial: "shared/sidemenu" %>
 </div>

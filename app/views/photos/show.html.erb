@@ -1,2 +1,27 @@
-<h1>Photos#show</h1>
-<p>Find me in app/views/photos/show.html.erb</p>
+<div id="photo" class="row">
+    <div id="main-photo" class="col-md-8 col-lg-9">
+        <div class="corner-title">
+            <h2>
+                <% if !@photo.photo_category.nil?%>
+                    <span><%= @photo.photo_category.name %></span>
+                <% else %>
+                    <span>PHOTO</span>
+                <% end %>
+            </h2>   
+        </div>
+        <div class="details">
+            <div class="row">
+                <div class="col-sm-4">
+                    <%= image_tag(@photo.img_url, :class => "img-responsive" ,:alt => @photo.title) %>
+                </div>
+                <div class="col-sm-8">
+                    <div class="title"><h3><%= @photo.title %></h3></div>
+                    <div class="meta">
+                        <span>UPDATE: <%= @photo.updated_at.strftime('%Y.%m.%d') %></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%= render partial: "shared/sidemenu" %>
+</div>
