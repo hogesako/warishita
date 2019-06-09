@@ -1,5 +1,10 @@
-<h1>New User</h1>
-
-<%= render 'form', user: @user %>
-
-<%= link_to 'Back', users_path %>
+<div id="content" class="row">
+    <div id="main-content" class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="panel-title">新規会員登録</h3>
+            </div>
+            <%= render 'form', user: @user %>
+        </div>
+    </div>
+</div>

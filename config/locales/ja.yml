@@ -6,3 +6,20 @@ ja:
       previous: "< 前"
       next: "次 >"
       truncate: "..."
+  activerecord:
+    models:
+      user: ユーザー
+    attributes:
+      user:
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: パスワード(もう一度入力)
+        payed: 有料会員とするか(テスト用)
+  label:
+    user:
+      submit: 新規登録
+      login: ログイン
+      email: メールアドレス
+      password: パスワード
+
+      
