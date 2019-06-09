@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'signin', to: 'user_sessions#new'
+  post 'users/signin', to: 'user_sessions#create'
+  get 'signout', to: 'user_sessions#destroy'
+  get 'signup', to: 'users#new'
+
+  get 'dashboard', to: 'users#dashboard'
+
   resources :users
   get 'movies/show'
   get 'photos/show'

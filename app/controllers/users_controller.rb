@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :require_login
+  skip_before_action :require_login, only: [:index, :new, :create]
+
 
   # GET /users
   # GET /users.json
@@ -59,6 +62,9 @@ class UsersController < ApplicationController
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def dashboard
   end
 
   private
