@@ -1,3 +1,26 @@
 // Place all the styles related to the top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.read-more {
+    background-color: #1d2a6f;
+    color: #fff;
+    margin-top: 10px;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Arvo",serif;
+
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+#top-news {
+    margin: 0 0 50px;
+}
+
+#top-whatsnew {
+    margin: 0 0 50px;
+}

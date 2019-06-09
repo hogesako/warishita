@@ -1,5 +1,58 @@
+    <div id="image-and-banners">
+        <%= image_tag('site_top.png', :class => "img-responsive" ,:alt => "site top") %>
+ 	</div>
 <div id="content" class="row">
     <div id="main-content" class="col-md-8 col-lg-9">
+        <div id="top-news" class="row">
+            <div class="col-sm-4">
+                <h2>
+                    NEWS
+                </h2>
+                <div class="read-more"><span style="color:#fff;" class="fas fa-chevron-right"></span><a href="/contents/news">more</a></div>
+            </div>
+            <div class="content-list col-sm-8">
+                <ul class="list-unstyled">
+                    <% @contents.each do |news| %>
+                        <li>
+                            <a href="/contents/<%= news.id %>">
+                                <div class="title"><%= news.title %></div>
+                                <div class="meta">
+                                    <span>UPDATE: <%= news.updated_at.strftime('%Y.%m.%d') %></span>
+                                    <% if !news.category.nil?%>
+                                        <span>/ <%= news.category.name %></span>
+                                    <% end %>
+                                </div>
+                            </a>
+                        </li>
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+        <div id="top-whatsnew" class="row">
+            <div class="col-sm-4">
+                <h2>
+                    WHAT'S NEW
+                </h2>
+                <div class="read-more"><span style="color:#fff;" class="fas fa-chevron-right"></span><a href="/pages/update">more</a></div>
+            </div>
+            <div class="content-list col-sm-8">
+                <ul class="list-unstyled">
+                    <% @contents.each do |news| %>
+                        <li>
+                            <a href="/contents/<%= news.id %>">
+                                <div class="title"><%= news.title %></div>
+                                <div class="meta">
+                                    <span>UPDATE: <%= news.updated_at.strftime('%Y.%m.%d') %></span>
+                                    <% if !news.category.nil?%>
+                                        <span>/ <%= news.category.name %></span>
+                                    <% end %>
+                                </div>
+                            </a>
+                        </li>
+                    <% end %>
+                </ul>
+            </div>
+        </div>
     </div>
     <%= render partial: "shared/sidemenu" %>
 </div>
