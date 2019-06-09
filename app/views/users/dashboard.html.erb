@@ -1,6 +1,6 @@
-<h1>Editing User</h1>
-
-<%= render 'form', user: current_user %>
-
-<%= link_to 'Show', current_user %> |
-<%= link_to 'Back', users_path %>
+<div id="content" class="row">
+    <div id="main-content" class="col-md-12">
+        <%= current_user.email %>
+        <%= current_user.payed ? '有料会員': '無料会員' %>
+    </div>
+</div>
